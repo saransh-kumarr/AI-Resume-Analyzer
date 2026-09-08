@@ -1,39 +1,33 @@
 # AI Resume Analyzer 🚀
 
-A smart AI-powered web app that analyzes resumes against job descriptions and provides ATS score, keyword insights, and role-based suggestions.
+A Flask-based web application that analyzes resumes against job descriptions, providing ATS compatibility scores, keyword gap analysis, and role-based suggestions to help job seekers optimize their resumes.
+
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Flask](https://img.shields.io/badge/Flask-Framework-black)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+## 📸 Demo
+
+<!-- Add a screenshot or GIF here — this matters more than any text on this page -->
+<!-- Example: ![App Screenshot](screenshots/demo.png) -->
 
 ## 🔥 Features
 
-- Resume upload (PDF/DOCX)
-- Keyword matching with job description
-- ATS score calculation
-- Missing keyword detection
-- Multi-role detection (Top 3 roles)
-- Smart suggestions
-- Clean UI with score visualization
+- 📄 **Resume Upload** — supports PDF and DOCX formats
+- 🔍 **Keyword Matching** — compares resume content against job description keywords
+- 📊 **ATS Score Calculation** — generates a compatibility score (0–100)
+- ⚠️ **Missing Keyword Detection** — highlights gaps between resume and job description
+- 🎯 **Multi-Role Detection** — identifies top 3 best-fit roles for the resume
+- 💡 **Smart Suggestions** — actionable feedback to improve ATS compatibility
+- 🎨 **Clean UI** — score visualization with an intuitive interface
 
 ## 🛠 Tech Stack
 
-- Python (Flask)
-- NLP (Keyword Matching)
-- HTML, CSS
-- JavaScript
+| Category | Technology |
+|---|---|
+| Backend | Python, Flask |
+| Resume Parsing | pdfplumber, python-docx |
+| Logic | Keyword extraction & matching (NLP-based) |
+| Frontend | HTML, CSS, JavaScript |
 
 ## 📊 Example Output
-
-- Resume Score: 78%
-- Best Role: Full Stack Developer
-- Top Roles:
-  - Full Stack Developer
-  - Web Developer
-  - Python Developer
-
-## 🚀 How to Run
-
-```bash
-git clone https://github.com/YOUR-USERNAME/AI-Resume-Analyzer.git
-cd AI-Resume-Analyzer
-python -m venv venv
-venv\Scripts\activate
-pip install -r requirements.txt
-python app.py
