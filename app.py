@@ -36,4 +36,4 @@ def analyze():
     return render_template("result.html", result=result, ats_tips=ats_tips)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
